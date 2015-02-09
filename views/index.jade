@@ -1,0 +1,46 @@
+extends layout
+title=hackUSU
+block content
+  .bg-overlay
+    //-(data-0='background-image:linear-gradient(315deg, hsl(74, 4%, 100%), hsl(199, 62%, 25%));', data-end='background-image:linear-gradient(315deg, hsl(199,62%, 25%),hsl(74, 4%, 100%));')
+  .content(id='#skrollr-body')
+    section#main.montserrat
+      .ui.page.grid
+        .row
+          .center.aligned.column
+            .content
+              img.logo(src='/images/hackusu-logo.png', onerror='this.onerror=null; this.src=/core/static/assets/images/hack-logo-white.png')
+              |   
+              .title
+              .tagline
+               | Learn. Create. Build. Repeat.
+              |             
+              .date
+                br
+                | Happening Now,
+              |             
+              .location
+                | on USU Campus
+              |             
+              .description
+                | Want to build awesome things? Come hack with us.
+              |             
+              br
+              |             
+              button.montserrat.green.outline.button(onclick="location.href='######'") Sign Up
+              |             
+    section#footer.lato
+      .content
+        | Built with 
+        a(href='http://youtu.be/yPar4PvRWAY', style='text-decoration: none')
+          i.ui.red.heart.icon
+        |  by the hackUSU team 2015.
+      br
+      a.social(href='mailto:team@hackusu.org')
+        i.ui.icon.mail
+      |     
+      a.social(href='https://twitter.com/hackusu')
+        i.ui.icon.twitter
+      |     
+      a.social(href='https://www.facebook.com/HackUSU')
+        i.ui.icon.facebook

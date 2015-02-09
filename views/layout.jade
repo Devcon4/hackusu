@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= title
+    // Images
+    link(rel='icon', type='image/png', href='/s/assets/images/hack-logo-favicon.png')
+    // Fonts
+    link(href='//fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+    link(href='//fonts.googleapis.com/css?family=Lato:300', rel='stylesheet', type='text/css')
+    // Stylesheets
+    link(rel='stylesheet' href="/bower_components/semantic-ui/dist/semantic.min.css")
+    link(rel='stylesheet' href="/stylesheets/main.css")
+    link(rel='stylesheet' href="/stylesheets/main-2.css")
+    // JQuery
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    // SemanticUI
+    script(src="/bower_components/semantic-ui/dist/semantic.min.js")
+    // Skrollr
+    script(src='base.js')
+    script(src='/bower_components/skrollr/dist/skrollr.min.js')
+      
+  body
+    block content

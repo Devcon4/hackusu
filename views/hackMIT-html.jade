@@ -1,0 +1,564 @@
+doctype html
+html
+  head(lang='en')
+    meta(charset='UTF-8')
+    |   
+    title
+      | HACKMIT -
+      | Oct 4-5
+    |   
+    link(rel='icon', type='image/png', href='/s/assets/images/hack-logo-favicon.png')
+    |   
+    link(href='//fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+    |   
+    link(href='//fonts.googleapis.com/css?family=Lato:300', rel='stylesheet', type='text/css')
+    |   
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
+    |   
+    link(href='/s/stylesheets/main.css', rel='stylesheet', type='text/css')
+    // <script src=/s/bower_components/jquery/dist/jquery.min.js></script>
+    // Include Semantic-UI
+    script(src='/s/bower_components/semantic-ui/build/packaged/javascript/semantic.min.js')
+    |   
+    link(href='/s/bower_components/semantic-ui/build/packaged/css/semantic.min.css', rel='stylesheet', type='text/css')
+    // for Facebook
+    meta(property='og:title', content='HACKMIT 2014')
+    |   
+    meta(property='og:type', content='website')
+    |   
+    meta(property='og:image', content='/s/assets/images/hack-logo-fb.png')
+    |   
+    meta(property='og:url', content='http://hackmit.org')
+    |   
+    meta(property='og:description', content='Get ready for a hackathon like none other. Oct 4-5, MIT.')
+    // for Twitter
+    meta(name='twitter:card', content='summary')
+    |   
+    meta(name='twitter:site', content='@hackmit')
+    |   
+    meta(name='twitter:title', content='HACKMIT 2014')
+    |   
+    meta(name='twitter:description', content='Get ready for a hackathon like none other. Oct 4-5, MIT.')
+    |   
+    meta(name='twitter:image:src', content='/s/assets/images/hack-logo-fb.png')
+    |   
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |   
+    script.
+      var csrftoken = "1423347178.6##f571162f5d1efee6b089130e2f1e1ba88a864ed7";
+      $.ajaxSetup({
+      beforeSend: function(xhr, settings) {
+      if (!/^(GET|HEAD|OPTIONS|TRACE)$/i.test(settings.type)) {
+      xhr.setRequestHeader("X-CSRFToken", csrftoken)
+      }
+      }
+      })
+    |   
+    script(src='/s/js/base.js')
+    script(src='/core/static/js/index.js')
+    script(src='/core/static/bower_components/skrollr/dist/skrollr.min.js')
+    link(rel='stylesheet', href='/core/static/stylesheets/index.css', type='text/css')
+  body
+    .bg-overlay(data-0='background-image:linear-gradient(315deg, hsl(208, 99%, 56%), hsl(119, 86%, 62%));', data-end='background-image:linear-gradient(315deg, hsl(202,100%, 15%),hsl(10, 72%, 50%));')
+    .content(id='#skrollr-body')
+      section#main.montserrat
+        .ui.page.grid
+          .row
+            .center.aligned.column
+              .content
+                img.logo(src='/core/static/assets/images/hack-logo-white.svg', onerror='this.onerror=null; this.src=/core/static/assets/images/hack-logo-white.png')
+                |             
+                .title
+                  // Heads up, some of your fellow hackers might have beaten you to all the puzzle codes!
+                  | HA
+                  span#c C
+                  | KMIT
+                |             
+                .tagline
+                  | Get ready for a hackathon like none other.
+                |             
+                .date
+                  | Oct 4 - 5, 2014,
+                |             
+                .location
+                  | MIT CAMPUS
+                |             
+                .description
+                  | Open to all undergraduates from all universities.
+                |             
+                br
+                |             
+                button.montserrat.green.outline.button(onclick="location.href='/login'") LOGIN
+                |             
+                br
+              |           
+              br
+              |           
+              br
+              |           
+              br
+              |           
+              br
+              |           
+              i#next.ui.down.link.arrow.icon
+      |   
+      section#info
+        .info-container
+          .info-title
+            | WHAT IS HACKMIT?
+          |     
+          .info-description
+            | HackMIT is MIT&rsquo;s premier hackathon. On October 4-5, over 1,000 students will
+            | converge at MIT to create, innovate, and build software and
+            | hardware projects over a 24-hour period. Our focus on cutting-edge
+            | technologies&mdash;including Bitcoin, emerging hardware interfaces, and new software
+            | languages&mdash;makes HackMIT truly unique.
+      |   
+      section#faq
+        .faq-title
+          | FAQ
+        |     
+        .ui.three.column.stackable.page.grid
+          .row
+            .column
+              .question
+                | Who can attend?
+              |           
+              .answer
+                | All undergraduate students from any university are welcome.
+                | Non-MIT students must be 18 or older. Unfortunately, high school
+                | students and graduate students cannot attend.
+            |         
+            .column
+              .question
+                | How can I register?
+              |           
+              .answer
+                | This year we&rsquo;re holding a registration lottery. You must submit a lottery application by July 28th at 11:59PM EDT, after which we will randomly select hackers to admit. Once you are chosen, you may finish your registration profile. The HackMIT admissions lottery will operate on a rolling basis; you will have a week to accept your spot once you are lotteried in.
+            |         
+            .column
+              .question
+                | How much does attending cost?
+              |           
+              .answer
+                | Admission is free, and includes food, drinks, and miscellaneous swag for the entire hackathon!
+          |       
+          .row
+            .column
+              .question
+                | What food will you provide?
+              |           
+              .answer
+                | We&rsquo;ll keep you fed throughout the weekend. All meals from breakfast on Saturday to breakfast on Sunday, as well as snacks in between, are covered by us. Just imagine yummy mediterranean dinner, late night waffle snacks, and an endless supply of fruit.  We&rsquo;ll try to
+                | accommodate dietary restrictions as best we can!
+            |         
+            .column
+              .question
+                | Can I get reimbursed for travel?
+              |           
+              .answer
+                | We are providing buses to Yale, Brown, Waterloo, Toronto, Columbia, NYU, and Princeton. If you do not attend one of these schools, you can receive travel reimbursement by uploading a travel receipt by the registration confirmation deadline. Hackers from Massachusetts can receive up to $100, but those coming from within 30 miles of MIT will not be reimbursed. Any other U.S. students can receive up to $200, and international students can receive up to $500.
+            |         
+            .column
+              .question
+                | How big should teams be? Can I do it alone?
+              |           
+              .answer
+                | Teams should be at most 4 people. You can do it alone,
+                | but it&apos;ll be less fun! Once you submit a lottery application,
+                | you can create a team or join someone else&apos;s. Even if your team
+                | doesn&rsquo;t make it, your team might be let in on a rolling basis as spots open up.
+                | MIT students - you&apos;re in for sure!
+          |       
+          .row
+            .column
+              .question
+                | What should I bring?
+              |           
+              .answer
+                | All attendees are required to bring their valid student ID
+                | for admission (name must match registration) and a laptop
+                | for hacking. If you want to do a hardware hack, don&apos;t forget
+                | to bring the devices you plan on working with. We will have
+                | some hardware for you to hack on, and a complete list will be
+                | posted closer to the event date.
+            |         
+            .column
+              .question
+                | What should I not bring?
+              |           
+              .answer
+                | Firearms, knives, and weapons of any kind are banned.
+                | If you can&apos;t bring it on an airplane, don&apos;t bring it here!
+            |         
+            .column
+              .question
+                | Is there a puzzle?
+              |           
+              .answer
+                | Yes. Full fight club rules apply. If you&apos;re quick enough, solving the puzzle
+                | successfully guarantees admission for you and your team!
+          |       
+          .row
+            .column
+              .question
+                | Will you have hardware prototyping equipment?
+              |           
+              .answer
+                | We&rsquo;ll stock a limited supply of hardware hack tools and
+                | prototyping materials, similar to what we had last year.
+                | We&rsquo;ll be back with a complete list soon.
+            |         
+            .column
+              .question
+                | Where&rsquo;s the schedule?
+              |           
+              .answer
+                | Check-in for HackMIT will be from 9AM-11AM on Saturday morning; the opening ceremony will start at 11AM. HackMIT will end around 1:45PM on Sunday. Scroll down for a more detailed schedule, and check back soon for a full list of events.
+            |         
+            .column
+              .question
+                | I have a question that&rsquo;s not listed here. Who should I ask?
+              |           
+              .answer
+                | You can get in touch with us at 
+                a(href='mailto:team@hackmit.org') team@hackmit.org
+                |  or via 
+                a(href='http://twitter.com/hackmit') Twitter
+                | , or 
+                a(href='https://www.facebook.com/HackMIT') Facebook
+                | .
+      |   
+      section#schedule
+        .schedule-title
+          | SCHEDULE
+        |     
+        .ui.two.column.stackable.page.grid
+          .row
+            .column
+              .event
+                .day-header
+                  | SATURDAY
+              |           
+              .event
+                .header
+                  | 9AM - 11AM
+                |             Registration
+              |           
+              .event
+                .header
+                  | 11AM - 12:30PM
+                |             Opening Ceremony
+              |           
+              .event
+                .header
+                  | 12:30PM
+                |             HACKING BEGINS
+              |           
+              .event
+                .header
+                  | 12:45PM - 10:30PM
+                |             Workshops, Tech Talks, Fireside Chats
+            |         
+            .column
+              .event
+                .day-header
+                  | SUNDAY
+              |           
+              .event
+                .header
+                  | 12AM - 1AM
+                |             Special Midnight Challenge
+              |           
+              .event
+                .header
+                  | 9AM
+                |             Hack Submissions Due
+              |           
+              .event
+                .header
+                  | 10:30AM - 12PM
+                |             Hacking Ends, Judging Begins
+              |           
+              .event
+                .header
+                  | 12:30PM - 1:45PM
+                |             Closing Ceremony
+      |   
+      section#speakers
+        .speakers-title
+          | SPEAKERS
+        |     
+        .ui.two.column.center.aligned.stackable.page.grid
+          .row
+            .column
+              img.ui.circular.medium.image(src='/core/static/assets/images/adora.jpg')
+              |           
+              .name.montserrat
+                | Adora Cheung
+              |           
+              .description
+                | Co-founder/CEO, Homejoy
+            |         
+            .column
+              img.ui.circular.medium.image(src='/core/static/assets/images/alexis.jpg')
+              |           
+              .name.montserrat
+                | Alexis Ohanian
+              |           
+              .description
+                | Co-founder of reddit, YCombinator Partner
+      |   
+      section#sponsor
+        .sponsor-title
+          | SPONSORS
+        |     
+        .platinum.tier
+          .title
+            | PLATINUM
+          |       
+          a(href='http://www.amadeus.com')
+            img(src='/core/static/assets/images/logos/platinum/amadeus-logo.png')
+          |       
+          a(href='http://www.google.com')
+            img(src='/core/static/assets/images/logos/platinum/Google-logo.png')
+          |       
+          a(href='https://www.uber.com')
+            img(src='/core/static/assets/images/logos/platinum/Uber-logo.png')
+        |     
+        .gold.tier
+          .title
+            | GOLD
+          |       
+          a(href='http://www.akamai.com')
+            img(src='/core/static/assets/images/logos/gold/Akamai-logo.png')
+          |       
+          a(href='http://www.bloomberg.com/rd')
+            img(src='/core/static/assets/images/logos/gold/Bloomberg-logo.jpg')
+          |       
+          a(href='http://www.buzzfeed.com')
+            img#buzzfeed(src='/core/static/assets/images/logos/gold/Buzzfeed-logo.png')
+          |       
+          a(href='https://www.capitalone.com')
+            img(src='/core/static/assets/images/logos/gold/CapitalOne-logo.png')
+          |       
+          a(href='http://www.coinbase.com')
+            img(src='/core/static/assets/images/logos/gold/Coinbase-logo.png')
+          |       
+          a(href='http://www.directv.com')
+            img(src='/core/static/assets/images/logos/gold/DIRECTV-logo.png')
+          |       
+          a(href='https://www.dropbox.com')
+            img(src='/core/static/assets/images/logos/gold/Dropbox-logo.png')
+          |       
+          a(href='http://www.facebook.com')
+            img(src='/core/static/assets/images/logos/gold/Facebook-logo.png')
+          |       
+          a(href='http://fiscalnote.com')
+            img(src='/core/static/assets/images/logos/gold/FiscalNote-logo.png')
+          |       
+          a(href='http://goldmansachs.com')
+            img(src='/core/static/assets/images/logos/gold/GoldmanSachs-logo.gif')
+          |       
+          a(href='http://idolondemand.com')
+            img(src='/core/static/assets/images/logos/gold/HP-logo.png')
+          |       
+          a(href='http://www.kpcbfellows.com')
+            img(src='/core/static/assets/images/logos/gold/KPBC-logo.png')
+          |       
+          a(href='http://www.microsoft.com')
+            img(src='/core/static/assets/images/logos/gold/Microsoft-logo.png')
+          |       
+          a(href='http://www.gesoftware.com')
+            img(src='/core/static/assets/images/logos/gold/QuirkyGE-logo.png')
+          |       
+          a(href='http://www.evidence.com/about-us/')
+            img(src='/core/static/assets/images/logos/gold/TASERInternational-logo.jpg')
+          |       
+          a(href='http://thomsonreuters.com')
+            img(src='/core/static/assets/images/logos/gold/ThomsonReuters-logo.gif')
+          |       
+          a(href='http://www.twosigma.com')
+            img(src='/core/static/assets/images/logos/gold/TwoSigma-logo.png')
+          |       
+          a(href='http://www.whisper.sh')
+            img(src='/core/static/assets/images/logos/gold/Whisper-logo.png')
+        |     
+        .silver.tier
+          .title
+            | SILVER
+          |       
+          a(href='https://aws.amazon.com/activate/')
+            img(src='/core/static/assets/images/logos/silver/AmazonWebServices-logo.png')
+          |       
+          a(href='https://www.booster.com')
+            img(src='/core/static/assets/images/logos/silver/BoosterCustomInk-logo.gif')
+          |       
+          a(href='http://www.boozallen.com')
+            img(src='/core/static/assets/images/logos/silver/BoozAllenHamilton-logo.png')
+          |       
+          a(href='https://www.circle.com/en')
+            img(src='/core/static/assets/images/logos/silver/Circle-logo.png')
+          |       
+          a(href='http://www.comcast.com/')
+            img(src='/core/static/assets/images/logos/silver/Comcast-logo.jpg')
+          |       
+          a(href='https://www.codeship.io/')
+            img(src='/core/static/assets/images/logos/silver/Codeship-logo.png')
+          |       
+          a(href='http://www.GoDaddy.com')
+            img(src='/core/static/assets/images/logos/silver/GoDaddy-logo.png')
+          |       
+          a(href='http://kayak.com')
+            img(src='/core/static/assets/images/logos/silver/Kayak-logo.jpg')
+          |       
+          a(href='http://www.yelp.com')
+            img(src='/core/static/assets/images/logos/silver/Yelp-logo.png')
+        |     
+        .bronze.tier
+          .title
+            | BRONZE
+          |       
+          a(href='https://asana.com')
+            img(src='/core/static/assets/images/logos/bronze/Asana-logo.png')
+          |       
+          a(href='http://assembly.com')
+            img(src='/core/static/assets/images/logos/bronze/Assembly-logo.png')
+          |       
+          a(href='http://www.cisco.com')
+            img(src='/core/static/assets/images/logos/bronze/Cisco-logo.jpg')
+          |       
+          a(href='https://www.digitalocean.com')
+            img(src='/core/static/assets/images/logos/bronze/DigitalOcean-logo.png')
+          |       
+          a(href='http://www.fitbit.com')
+            img(src='/core/static/assets/images/logos/bronze/Fitbit-logo.jpg')
+          |       
+          a(href='http://www.hudson-trading.com')
+            img(src='/core/static/assets/images/logos/bronze/HudsonRiverTrading-logo.png')
+          |       
+          a(href='http://www.hhcc.com/')
+            img(src='/core/static/assets/images/logos/bronze/HillHolliday-logo.png')
+          |       
+          a(href='https://www.janestreet.com/')
+            img(src='/core/static/assets/images/logos/bronze/JaneStreet-logo.png')
+          |       
+          a(href='https://www.kensho.com/')
+            img(src='/core/static/assets/images/logos/bronze/Kensho-logo.png')
+          |       
+          a(href='http://www.levantpower.com')
+            img(src='/core/static/assets/images/logos/bronze/LevantPower-logo.gif')
+          |       
+          a(href='http://bigdata.csail.mit.edu/')
+            img(src='/core/static/assets/images/logos/bronze/MITBigDataLivingLab-logo.jpg')
+          |       
+          a(href='https://www.hellonod.com/')
+            img(src='/core/static/assets/images/logos/bronze/NodLabs-logo.png')
+          |       
+          a(href='http://www.mongodb.org')
+            img(src='/core/static/assets/images/logos/bronze/MongoDB-logo.png')
+          |       
+          a(href='http://namecheap.com')
+            img(src='/core/static/assets/images/logos/bronze/Namecheap-logo.png')
+          |       
+          a(href='http://www.oculus.com/')
+            img(src='/core/static/assets/images/logos/bronze/OculusVR-logo.png')
+          |       
+          a(href='http://www.sailthru.com/')
+            img(src='/core/static/assets/images/logos/bronze/Sailthru-logo.jpg')
+          |       
+          a(href='http://www.synaptics.com')
+            img(src='/core/static/assets/images/logos/bronze/Synaptics-logo.jpg')
+          |       
+          a(href='http://www.tibco.com/')
+            img(src='/core/static/assets/images/logos/bronze/TIBCO-logo.gif')
+          |       
+          a(href='https://www.twilio.com/')
+            img(src='/core/static/assets/images/logos/bronze/Twilio-logo.png')
+          |       
+          a(href='https://www.ziggeo.com/')
+            img(src='/core/static/assets/images/logos/bronze/Ziggeo-logo.png')
+          |       
+          a(href='https://www.thalmic.com/en/myo/')
+            img(src='/core/static/assets/images/logos/bronze/ThalmicLabs-logo.png')
+          |       
+          a(href='http://libertyteller.com/')
+            img(src='/core/static/assets/images/logos/bronze/LibertyTeller-logo.png')
+          |       
+          a(href='https://lob.com/')
+            img(src='/core/static/assets/images/logos/bronze/Lob-logo.jpg')
+          |       
+          a(href='http://wolframalpha.com/')
+            img(src='/core/static/assets/images/logos/bronze/WolframAlpha-logo.png')
+          |       
+          a(href='https://www.makegameswith.us/')
+            img(src='/core/static/assets/images/logos/bronze/MakeSchool-logo.png')
+          |       
+          a(href='http://roughdraft.vc/')
+            img(src='/core/static/assets/images/logos/bronze/RoughDraftVentures-logo.jpeg')
+          |       
+          a(href='http://www.justyo.co/')
+            img(src='/core/static/assets/images/logos/bronze/Yo-logo.jpg')
+        |       
+        br
+        |       
+        br
+        |       
+        br
+        |     
+        .sponsor-title(style='margin-bottom: 0;')
+          | PARTNERS
+        |     
+        br
+        |     
+        .partners.tier
+          a(href='http://a16z.com/portfolio/')
+            img(src='/core/static/assets/images/logos/partners/AndreessenHorowitz-logo.png')
+          |       
+          br
+          |       
+          br
+          |       
+          br
+          |       
+          a(href='http://www.ycombinator.com/')
+            img(src='/core/static/assets/images/logos/partners/Y-combinator-logo.gif')
+        |     
+        .sponsor-message
+          | Interested in sponsoring? Email us at
+          a(href='mailto:team@hackmit.org')
+            | team@hackmit.org
+          | .
+      |   
+      section#register.montserrat
+        .ui.page.grid
+          .row
+            .center.aligned.column
+              .content
+                img.logo(src='/core/static/assets/images/hack-logo-white.svg', onerror='this.onerror=null; this.src=/core/static/assets/images/hack-logo-white.png')
+                |             
+                .title
+                  | HACKMIT
+                |             
+                .tagline
+                  | What are you waiting for?
+                |             
+                button.montserrat.red.outline.button(onclick="location.href='/login'") LOGIN
+      |   
+      section#footer.lato
+        .content
+          | Built with 
+          a(href='http://youtu.be/yPar4PvRWAY', style='text-decoration: none')
+            i.ui.red.heart.icon
+          |  by the HACKMIT Team 2014
+        |     
+        br
+        |     
+        a.social(href='mailto:team@hackmit.org')
+          i.ui.icon.mail
+        |     
+        a.social(href='https://twitter.com/hackmit')
+          i.ui.icon.twitter
+        |     
+        a.social(href='https://www.facebook.com/HackMIT')
+          i.ui.icon.facebook
