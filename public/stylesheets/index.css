@@ -66,8 +66,8 @@ section#main .ui.page.grid {
 }
 
 .logo {
-  height: 150px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
 }
 
 .title {
@@ -391,9 +391,9 @@ section#footer {
   padding: 24px 0;
   background: rgba(0,0,0,.7);
   min-height: 3em;
-  /*height: 60px;*/
+  height: auto;
   text-align: center;
-  margin-top: -100px;
+  margin-top: -95px;
 }
 
 section#footer a.social {
@@ -443,7 +443,10 @@ section#footer .icon:hover {
   section {
     position: relative !important;
     height: 100% !important;
-    min-height: 100% !important;
+    /*min-height: 100% !important;*/
+  }
+  section#footer {
+    margin-top: -80px;
   }
 
   .ui.page.grid{
