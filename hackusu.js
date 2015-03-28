@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Make Bower_Components Publicly Available
+// Create a 'virtual' directory for bower_components to be accessible.
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 
 app.use('/', routes);
