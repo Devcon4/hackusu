@@ -106,9 +106,13 @@ section#main .ui.page.grid {
 
 .description {
   margin-top: 35px;
-  font-size: 1.05em;
+  font-size: 1.55em;
   letter-spacing: 1.7px;
   text-transform: uppercase;
+}
+
+.description.span {
+  color: #193441;
 }
 
 button.outline{
@@ -301,7 +305,8 @@ section#sponsor {
   min-height: 120px;
   height: 20%;
   text-align: center;
-  color: rgb(56,153,179);
+  color: #193441;
+  /*color: rgb(56,153,179);*/
   padding-left:12%;
   padding-right:12%;
 }
@@ -336,11 +341,11 @@ section#sponsor {
   }
 
   #sponsor img{
-    width: 100%;
+    width: 100px;
+    height: auto;
     display: inline-block;
     vertical-align: middle;
     margin: 16px;
-
   }
 
   #sponsor .platinum img{

@@ -14,27 +14,43 @@ block content
               .title
               .tagline
                | Learn. Create. Build. Repeat.
-              |             
+              |                          
+              .description
+                | We aren't about ideas.
+                br
+                br  
+                p
+                | We're about making ideas happen.
               .date
                 br
-                | Thursdays @ 6:00 PM in 
-              |             
+                | Thursdays @ 6:00 PM &nbsp;
               .location
                 | Old Main 406
-              |             
-              .description
-                | Want to build awesome things?
-                p
-                | Check out 
-                a(href='http://purduehackers.com/') Purdue Hackers 
-                | and 
-                a(href='https://hack.uchicago.edu/hack-nights/new-to-hack-night/') UC Chicago&apos;s Hack Night FAQ 
-                | to learn what we're starting.
               | 
               br
               |             
               button.montserrat.green.outline.button(onclick="location.href='http://goo.gl/forms/6lsbx5qJHu'") SIGN UP
-              |      
+    
+    section#faq
+      .faq-title
+        | WHO WE ARE
+        br
+        br
+        canvas#myChart(width='250', height='250')
+
+    section#sponsor
+      .sponsor-title
+        | SPONSORS
+        .silver.tier      
+          a(href='http://www.cvehosted.com/')
+            img(src='images/cve-hosted.png')
+          a(href='http://www.usu.edu/')
+            img(src='images/usu-logo.png')
+          a(href='https://www.stickermule.com/unlock?ref_id=4213360701')
+            img(src='images/stickermule-logo.png')
+          a(href='https://http://www.engineering.usu.edu/')
+            img(src='images/engineering-logo.jpg')
+                       
     section#footer.lato
       .content
         | Built with 
@@ -50,3 +66,4 @@ block content
       |     
       a.social(href='https://www.facebook.com/HackUSU')
         i.ui.icon.facebook
+    script(src='mychart.js')
