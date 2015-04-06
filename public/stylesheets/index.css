@@ -5,6 +5,41 @@ body {
   margin: 0;
 }
 
+/* Chart
+.mychart-legend {
+  list-style: none;
+  position: absolute;
+  right: 8px;
+  top: 0;
+}
+.mychart-legend li {
+  display: block;
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 4px;
+  border-radius: 5px;
+  padding: 2px 8px 2px 28px;
+  font-size: 14px;
+  cursor: default;
+  -webkit-transition: background-color 200ms ease-in-out;
+  -moz-transition: background-color 200ms ease-in-out;
+  -o-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+.mychart-legend li:hover {
+  background-color: #fafafa;
+}
+.mychart-legend li span {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  border-radius: 5px;
+}
+*/
+
 body {
   background: url(/images/bw-bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -173,12 +208,12 @@ section#info {
     line-height: 1.5em;
   }
 
-/* FAQ PANEL */
-section#faq {
+/* WHO WE ARE PANEL */
+section#who-we-are {
   padding: 80px 0;
 }
 
-  #faq .faq-title {
+  #who-we-are .faq-title {
     text-align: center;
     font-family: 'Montserrat', 'Helvetica Neue','Helvetica', 'Arial', sans-serif;
     font-weight: 700;
@@ -186,100 +221,23 @@ section#faq {
     margin-bottom: 80px;
   }
 
-  #faq .question {
+  #who-we-are .question {
     font-family: 'Montserrat', 'Helvetica Neue','Helvetica', 'Arial', sans-serif;
     font-size: 1.4em;
   }
 
-  #faq .answer {
+  #who-we-are .answer {
     line-height:1.4em;
   }
 
-  #faq a,
-  #faq a:visited {
+  #who-we-are a,
+  #who-we-are a:visited {
     color: white !important;
   }
 
-/* SCHEDULE PANEL */
-section#schedule {
-  background: rgba(255, 255, 255, .85);
-  text-align: center;
-  color: black;
-}
 
-section#schedule button {
-  font-size: 20px;
-  width: 320px;
-  border-radius:3px;
-  padding: 8px;
-  margin-top: 38px;
-  margin-bottom: -20px;
-  color: rgb(56,153,179);
-  background: rgba(56,153,179,0.15);
-  border: solid rgb(56,153,179) 2px;
-  opacity:.75;
-  -webkit-transition: color 500ms, background 500ms;
-  -moz-transition: color 500ms, background 500ms;
-  -o-transition: color 500ms, background 500ms;
-  -ms-transition: color 500ms, background 500ms;
-  transition: color 500ms, background 500ms;
-}
-
-section#schedule button:hover {
-  color: rgba(255,255,255,0.85);
-  background: rgba(56,153,179,1);
-}
-
-section#schedule .list {
-  margin: 0 auto;
-}
-
-section#schedule .header {
-  font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  font-size: 1.3em;
-  color: rgb(56, 153, 179);
-  margin-bottom: 8px;
-}
-
-section#schedule .day-header{
-  font-family: 'Montserrat', 'Helvetica Neue','Helvetica', 'Arial', sans-serif;
-    font-size: 2.5em;
-    font-weight: 700;
-    color: rgb(56,153,179);
-    text-align: center;
-  margin-top: 12px;
-}
-
-section#schedule .column{
-  text-align: center;
-}
-
-section#schedule .schedule-title {
-  font-family: 'Montserrat', 'Helvetica Neue','Helvetica', 'Arial', sans-serif;
-    font-size: 4em;
-    font-weight: 700;
-    color: rgb(56,153,179);
-    text-align: center;
-  margin-bottom: 12px;
-}
-
-@media only screen and (max-width: 320px) {
-  section#schedule .schedule-title{
-    font-family: 'Montserrat', 'Helvetica Neue','Helvetica', 'Arial', sans-serif;
-      font-size: 3.3em;
-      font-weight: 700;
-      color: rgb(56,153,179);
-      text-align: center;
-    margin-bottom: 12px;
-  }
-}
-
-section#schedule .event{
-    margin-bottom: 24px;
-}
-
-/* SPEAKERS PANEL */
-section#speakers .speakers-title {
+/* ORGANIZER PANEL */
+section#organizer .organizer-title {
   font-family: 'Montserrat', 'Helvetica Neue','Helvetica', 'Arial', sans-serif;
     font-size: 4em;
     font-weight: 700;
@@ -287,14 +245,14 @@ section#speakers .speakers-title {
   margin-bottom: 80px;
 }
 
-section#speakers img {
+section#organizer img {
   margin: 0 auto;
   border: 8px solid white;
   height: 200px;
   width: 200px;
 }
 
-section#speakers .name {
+section#organizer .name {
   font-size: 2em;
   margin-top: 24px;
 }
@@ -348,42 +306,12 @@ section#sponsor {
     margin: 16px;
   }
 
-  #sponsor .platinum img{
-    width: 40%;
-  }
-
-  #sponsor .platinum .grid {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
-  #sponsor .gold {
-    padding: 0 5%;
-  }
-
-  #sponsor .gold img {
-    display: inline-block;
-    width: 28%;
-  }
-
   #sponsor .silver {
     padding: 0 5%;
   }
 
   #sponsor .silver img {
     width: 20%;
-  }
-
-  #sponsor .bronze {
-    padding: 0 5%;
-  }
-
-  #sponsor .bronze img {
-    width: 14%;
-  }
-
-  #sponsor .partners img {
-    width: 25%;
   }
 
   #sponsor .ui.grid {
@@ -401,6 +329,8 @@ section#register .tagline {
 margin-bottom: 30px;
 }
 
+
+/* Footer */
 
 section#footer {
   width: auto;
