@@ -1,3 +1,13 @@
+/* TODO
+Fix stupid hover / skroll effect on white sections.
+
+
+
+*/
+
+
+
+
 html,
 body {
   height: 100%;
@@ -65,7 +75,7 @@ a:hover {
 
 section#main {
   padding: 0;
-  min-height: 65vh;
+  min-height: 75vh;
 }
 
 section#main .ui.page.grid {
@@ -148,30 +158,60 @@ button.outline:focus {
   outline: 0;
 }
 
-/* INFO PANEL */
+/* PROJECTS */
 
-section#info {
+section#projects {
   background: rgba(255,255,255,.85);
   min-height: 240px;
   text-align: center;
   color: black;
-  padding: 100px 16px;
+  padding: 80px 0px;
 }
 
-  #info .info-title{
+  #projects .projects-title{
     font-family: 'Montserrat', 'Helvetica Neue','Helvetica', 'Arial', sans-serif;
     font-weight: 700;
     letter-spacing: 1.7px;
-    font-size: 4em;
-    color: rgb(56,153,179);
+    font-size: 3.2em;
+    color: #193441;
+    margin-bottom: 80px;
+    margin-top: 10px;
   }
 
-  #info .info-description{
+  #projects .project-description{
     width: 70%;
     margin: 30px auto;
     font-size: 1.3em;
     line-height: 1.5em;
   }
+
+  #projects p {
+    font-size: 24px;
+    padding-top: 10px;
+    color: #193441;
+  }
+
+  #projects i {
+    color: #193441;
+  }
+
+  #projects .projects-tech{
+    font-family: 'Montserrat', 'Helvetica Neue','Helvetica', 'Arial', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.7px;
+    font-size: 3.2em;
+    color: #193441;
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+
+  #projects .tech-images {
+    position: relative;
+    border-radius: 4px;
+    height: 43px;
+    width: 43px;
+  }
+
 
 /* WHO WE ARE PANEL */
 section#who-we-are {
@@ -208,16 +248,7 @@ section#who-we-are {
     padding-bottom: 10px;
   }
 
-  /* Chart
-
-  #myChart-Legend {
-    list-style: none;
-    position: absolute;
-    right: 8px;
-    top: 0;
-  }
-
-  */
+  /* CHARTS */
 
   #yearChart-Legend li {
     text-align: center;
