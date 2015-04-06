@@ -28,16 +28,28 @@ block content
                 | Old Main 406
               | 
               br
+              br
               |             
               button.montserrat.green.outline.button(onclick="location.href='http://goo.gl/forms/6lsbx5qJHu'") SIGN UP
     
-    section#faq
-      .faq-title
+    section#who-we-are
+      .who-we-are-title
         | WHO WE ARE
         br
         br
-        canvas#myChart(width='250', height='250')
-
+        .ui.two.column.center.aligned.stackable.page.grid
+          .row
+            .column
+              .chart-title
+                | Year
+              canvas#yearChart(width='250', height='250')
+              div#yearChart-Legend
+            .column
+              .chart-title
+                | Major
+              canvas#majorChart(width='250', height='250')
+              div#majorChart-Legend
+        
     section#sponsor
       .sponsor-title
         | SPONSORS
@@ -50,6 +62,10 @@ block content
             img(src='images/stickermule-logo.png')
           a(href='https://http://www.engineering.usu.edu/')
             img(src='images/engineering-logo.jpg')
+          a(href='https://http://chef.io/')
+            img(src='images/chef-logo.png')
+          a(href='https://http://www.xmission.com/')
+            img(src='images/xmission-logo.png')
                        
     section#footer.lato
       .content
