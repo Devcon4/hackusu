@@ -8,16 +8,4 @@ $(document).ready(function() {
 
   $('#main')
     .transition('fade up in', 2000);
-
-  $("#next").click(function() {
-    $('html, body').animate({
-      scrollTop: $("#info").offset().top
-    }, 1000);
-  });
-
-  $('#c')
-    .click(function(){
-      location.href = '/6361746d6974'
-    })
-
 });
